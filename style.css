@@ -4,7 +4,10 @@
 
 @theme {
   --color-bg: #fafafae5;
+  --color-bg-dark: #000000b2;
   --color-bg-foreground: #ffffffcc;
+  --color-bg-foreground-dark: #34343429;
+  --color-border-dark: #FFFFFF0A;
   --color-blue-main: #0066ffcc;
   --color-inner-shadow-white: #ffffff33;
 }
