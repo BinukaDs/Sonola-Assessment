@@ -4,7 +4,6 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
-        
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         sans: ["Poppins", "ui-sans-serif", "system-ui", "sans-serif"],

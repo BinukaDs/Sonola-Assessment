@@ -1,6 +1,32 @@
 @import "tailwindcss";
 
-
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.purple-gradient-btn {
+  background: linear-gradient(to right, #977bfd, #9b59fe);
+  transition: all 0.5s ease;
+  background-size: 400% 400%;
+  background-position: 0% 50%;
+}
+
+.purple-gradient-btn:hover {
+  animation-duration: 1s;
+  transform: translateY(-1px);
+  background-position: 100% 50%;
+  box-shadow: 0 4px 8px rgba(151, 123, 253, 0.3);
+}
+
+@keyframes emojiFade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
