@@ -2,6 +2,9 @@ import { Suspense, useEffect } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import Router from './Router'
 import './App.css'
+import { SidebarProvider } from './context/Sidebar/SidebarProvider'
+import { PuffLoader } from 'react-spinners'
+
 
 function App() {
 
@@ -31,13 +34,15 @@ function App() {
   }, []);
 
   return (
-    <>
+
+    <SidebarProvider>
       <BrowserRouter>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div className='h-full w-full flex justify-center items-center'><PuffLoader /></div>}>
           <Router />
         </Suspense>
       </BrowserRouter>
-    </>
+    </SidebarProvider>
+
   )
 }
 
