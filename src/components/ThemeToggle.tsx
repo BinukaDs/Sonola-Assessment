@@ -10,7 +10,9 @@ const ThemeToggle = () => {
 
   return (
     <Button
-      onClick={toggleTheme}
+      onClick={() => {
+        if (typeof toggleTheme === 'function') toggleTheme()
+      }}
       variant='ghost'
       aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
     >
