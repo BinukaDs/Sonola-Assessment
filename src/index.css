@@ -4,6 +4,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  transition: background-color 0.3s, color 0.3s;
+}
+
 .purple-gradient-btn {
   background: linear-gradient(to right, #977bfd, #9b59fe);
   transition: all 0.5s ease;
@@ -18,15 +22,4 @@ body {
   box-shadow: 0 4px 8px rgba(151, 123, 253, 0.3);
 }
 
-@keyframes emojiFade {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
