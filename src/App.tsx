@@ -8,30 +8,43 @@ import { PuffLoader } from 'react-spinners'
 
 function App() {
 
+  // useEffect(() => {
+  //   const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+  //   if (systemTheme.matches) {
+  //     document.documentElement.classList.add('dark');
+  //   } else {
+  //     document.documentElement.classList.remove('dark');
+  //   }
+
+
+  //   const handleThemeChange = (e: MediaQueryListEvent) => {
+  //     if (e.matches) {
+  //       document.documentElement.classList.add('dark');
+  //     } else {
+  //       document.documentElement.classList.remove('dark');
+  //     }
+  //   }
+
+  //   systemTheme.addEventListener('change', handleThemeChange);
+
+  //   return () => {
+  //     systemTheme.removeEventListener('change', handleThemeChange);
+  //   }
+  // }, []);
+
   useEffect(() => {
-    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+    const documentElement = document.documentElement;
+    const theme = localStorage.getItem("theme");
 
-    if (systemTheme.matches) {
-      document.documentElement.classList.add('dark');
+    if (theme === 'dark') {
+      documentElement.classList.add('dark');
     } else {
-      document.documentElement.classList.remove('dark');
+      documentElement.classList.remove('dark');
     }
 
-
-    const handleThemeChange = (e: MediaQueryListEvent) => {
-      if (e.matches) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-    }
-
-    systemTheme.addEventListener('change', handleThemeChange);
-
-    return () => {
-      systemTheme.removeEventListener('change', handleThemeChange);
-    }
-  }, []);
+    // localStorage.setItem("theme", theme);
+  }, [])
 
   return (
 
