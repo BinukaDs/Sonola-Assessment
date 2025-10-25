@@ -45,7 +45,7 @@ const Home = () => {
     { image: webpages2, title: "Web Pages", author: "Mark", date: "May 14, 2025", tags: [<LiveTag />, <ReviewTag />] },
   ]
   return (
-    <div className=' w-full h-full  dark:bg-[#1F1F1F]'>
+    <div className=' w-full h-full bg-white dark:bg-[#1F1F1F]'>
       <SideBar />
 
       <div className='md:ml-20 px-6 md:px-12 flex flex-col gap-5'>
@@ -78,11 +78,11 @@ const Home = () => {
         <section className='mt-5 w-full flex flex-col gap-2'>
           <FadeIn>
             <div className='w-full flex justify-between'>
-              <div className="flex gap-2  dark:text-dark-text items-center justify-center">
+              <div className="flex gap-2  text-light-secondary-text dark:text-dark-text items-center justify-center">
                 <FaRegStar />
                 <p>For you</p>
               </div>
-              <button className="group cursor-pointer flex gap-2  dark:text-dark-text items-center justify-center">
+              <button className="group cursor-pointer flex gap-2 text-light-secondary-text  dark:text-dark-text items-center justify-center">
                 <p className='group-hover:'>View all templates</p>
                 <FaArrowRight className='group-hover:translate-x-1.5 transition-all' />
               </button>
@@ -109,11 +109,11 @@ const Home = () => {
         <section className='mt-5 mb-5 w-full flex flex-col gap-2'>
           <FadeIn>
             <div className='w-full flex justify-between'>
-              <div className="flex gap-2  dark:text-dark-text items-center justify-center">
+              <div className="flex gap-2  text-light-secondary-text dark:text-dark-text items-center justify-center">
                 <FaRegClock />
                 <p>Recents</p>
               </div>
-              <button className="group cursor-pointer flex gap-2  dark:text-dark-text items-center justify-center">
+              <button className="group cursor-pointer flex gap-2 text-light-secondary-text  dark:text-dark-text items-center justify-center">
                 <p className='group-hover:'>See in projects</p>
                 <FaArrowRight className='group-hover:translate-x-1.5 transition-all' />
               </button>

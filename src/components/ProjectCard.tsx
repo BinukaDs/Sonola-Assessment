@@ -17,7 +17,7 @@ const ProjectCard = ({ image, title, author, date, tags }: ProjectCardProps) => 
             </div>
             <h3 className='font-medium dark:group-hover:text-gray-600'>{title}</h3>
             <div className='flex w-full justify-between'>
-                <p className='dark:text-dark-text dark:group-hover:text-gray-600'>
+                <p className='text-light-secondary-text dark:text-dark-text dark:group-hover:text-gray-600'>
                     {author}・{date}
                 </p>
                 <IoIosMore className='group-hover:dark:text-gray-600'/>

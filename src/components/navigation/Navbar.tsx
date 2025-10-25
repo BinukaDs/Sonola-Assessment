@@ -4,6 +4,7 @@ import Button from '../Button';
 import sparkles from '../../assets/images/sparkle-filled.png'
 import Searchbar from '../Searchbar';
 import SidebarToggle from '../SidebarToggle';
+import ThemeToggle from '../ThemeToggle';
 
 const Navbar = () => {
     
@@ -14,7 +15,9 @@ const Navbar = () => {
 
             <Searchbar className='hidden md:block'/>
 
+
            <div className='flex gap-4 justify-center items-center'>
+            <ThemeToggle />
                 <Button variant='outlined' >
                     Try Pro
                     <span>
