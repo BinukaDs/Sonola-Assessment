@@ -2,8 +2,8 @@ import SideBar from '../components/navigation/Sidebar';
 import Navbar from '../components/navigation/Navbar'
 import Button from '../components/Button'
 import { BsPlusSquareFill } from "react-icons/bs";
-import illustrations from "../assets/images/Illustrations.png"
-import gradientBg from "../assets/images/Gradient.png"
+import illustrations from "../assets/images/card-illustrations.png"
+import gradientBg from "../assets/images/white-gradient.png"
 import { FaRegStar } from "react-icons/fa";
 import { FaArrowRight, FaRegClock } from "react-icons/fa6";
 import TemplateCard from '../components/TemplateCard';
@@ -52,7 +52,7 @@ const Home = () => {
         <Navbar />
 
         <FadeIn>
-          <div className='h-80 relative overflow-hidden w-full flex justify-between bg-[#F7F2FFE5] bg-[url(assets/images/background-svg.png)] rounded-2xl'>
+          <div className='h-80 relative overflow-hidden w-full flex justify-between bg-[#F7F2FFE5] bg-[url(assets/images/svg-background.png)] rounded-2xl'>
             <div className='flex z-10 flex-col h-full  gap-2 p-12 justify-between'>
               <FadeInUp>
                 <div className='flex flex-col gap-2'>
