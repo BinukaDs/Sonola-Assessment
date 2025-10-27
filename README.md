@@ -1,9 +1,9 @@
 # Sonola Assessment - Frontend Dashboard
 
-> ###Technical Assessment Submission
+> ### Technical Assessment Submission
 > A React/TypeScript dashboard application demonstrating modern frontend development practices
 
-#Overview
+# Overview
 This project showcases a complete dashboard implementation with UI patterns, state management, and responsive design. Built as a technical assessment to demonstrate proficiency in modern React development.
 
 
