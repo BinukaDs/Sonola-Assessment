@@ -1,8 +1,0 @@
-{
-  "git": {
-    "deploymentEnabled": {
-      "main": true
-    }
-  },
-  "ignoreCommand": "git diff HEAD^ HEAD --quiet -- '*.md' 'docs/' || exit 1"
-}
