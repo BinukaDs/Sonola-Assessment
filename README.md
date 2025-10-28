@@ -7,14 +7,14 @@
 This project showcases a complete dashboard implementation with UI patterns, state management, and responsive design. Built as a technical assessment to demonstrate proficiency in modern React development.
 
 
-#✨ Key Features Implemented
+# ✨ Key Features Implemented
 - **Multi-page Application** - Welcome onboarding flow + Dashboard
-- **State Management** - Context API for theme and sidebar state
+- **State Management** - Context API for sidebar state and custom hook for Theme
 - **Responsive Design** - Mobile-first with desktop optimizations
 - **Framer Motion Animations** - Smooth fade-in effects and micro-interactions
 
 
-#🛠 Technical Stack
+# 🛠 Technical Stack
 - ***React 18 + TypeScript*** - Component architecture
 - ***Tailwind CSS*** - Utility-first styling with custom design tokens
 - ***React Router*** - Client-side navigation
